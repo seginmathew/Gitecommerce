@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="POST" enctype="multipart/form-data" class="form-group">
+                {% csrf_token %}
+
+                <!-- Movie Name -->
+                <div class="form-group">
+                    <label for="name">Movie Name:</label>
+                    <input type="text" name="name" id="name" class="form-control bg-light" placeholder="Enter Movie Name">
+                </div>
+
+                <!-- Movie Description -->
+                <div class="form-group">
+                    <label for="desc">Movie Description:</label>
+                    <textarea name="desc" id="desc" class="form-control bg-light" rows="4" placeholder="Enter Movie Description"></textarea>
+                </div>
+
+                <!-- Movie Year -->
+                <div class="form-group">
+                    <label for="year">Movie Year:</label>
+                    <input type="text" name="year" id="year" class="form-control bg-light" placeholder="Enter Movie Year">
+                </div>
+
+                <!-- Movie Image -->
+                <div class="form-group">
+                    <label for="img">Movie Image:</label>
+                    <input type="file" name="img" id="img" class="form-control-file">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

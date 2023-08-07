@@ -1,0 +1,27 @@
+body{
+background-color:aqua;
+}
+
+/* Add custom styles for the navigation bar */
+.navbar {
+  background-color: #007bff; /* Blue background color */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: none;
+  color: #fff; /* White text color on hover */
+}
